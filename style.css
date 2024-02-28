@@ -16,11 +16,6 @@ header{
     padding: 20px;
 }
 
-h1{
-    font-size: 26px;
-    margin: 0;
-}
-
 h3{
     font-size: 14px;
     margin-bottom: 10px;
@@ -68,4 +63,9 @@ footer{
     color: #ffffff;
     text-align: center;
     padding: 10px;
+}
+
+.logo {
+    max-width: 80px;
+    margin: 0;
 }
