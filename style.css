@@ -9,10 +9,17 @@ html{
 
 .brand-logo{
     display: inline-block;
-    height: 60px;
-    transform: scale(1);
-    margin-left: 0%;
-    padding-top: 6px;
+    height: 30px;
+    transform: scale(0.3);
+    margin-left: -5%;
+    transition: box-shadow .15s,transform .15s;
+}
+
+.brand-logo:hover{
+    display: inline-block;
+    height: 15px;
+    margin-left: -5%;
+    transform: scale(0.35);
 }
 
 .login-right{
@@ -37,7 +44,7 @@ html{
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono",monospace;
-    height: 48px;
+    height: 45px;
     justify-content: center;
     line-height: 1;
     list-style: none;
