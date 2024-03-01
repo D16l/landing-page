@@ -5,26 +5,38 @@ html{
 .navBar{
     background-color: aquamarine;
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
+    height: 75px;
+    animation-name: navBar;
+    animation-duration: 0.5s;
 }
 
+@keyframes navBar{
+    from{
+        height: 69px;
+    }
+    to{
+        height: 75px;
+    }
+}
 .brand-logo{
     display: inline-block;
     height: 30px;
-    transform: scale(0.3);
-    margin-left: -5%;
+    transform: scale(0.9);
+    margin-left: 0.01%;
+    margin-top: 8px;
     transition: box-shadow .15s,transform .15s;
 }
 
 .brand-logo:hover{
     display: inline-block;
-    height: 15px;
-    margin-left: -5%;
-    transform: scale(0.35);
+    height: 35px;
+    margin-left: 0.01%;
+    transform: scale(1);
 }
 
 .login-right{
-    padding-top: 5px;
-    padding-right: 10px;
+    padding-top: 12px;
+    padding-right: 15px;
     float: right;
     align-items: center;
     font-size: large;
@@ -35,7 +47,7 @@ html{
     border-style: solid;
     align-items: center;
     appearance: none;
-    background-color: #FCFCFD;
+    background-color: #ffffff;
     border-radius: 4px;
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
@@ -82,6 +94,20 @@ html{
     color: rgba(106, 214, 178, 0);
     height: 20px;
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
+    animation-name: division1;
+    animation-duration: 1s;
+}
+
+@keyframes division1 {
+    from{
+        height: 0px;
+        margin: 0%;
+    }
+
+    to{
+        height: 20px;
+        margin: auto;
+    }
 }
 
 .division-two{
@@ -89,6 +115,17 @@ html{
     color: rgba(106, 214, 178, 0);
     height: 10px;
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
+    animation-name: division2;
+    animation-duration: 1.5s;
+}
+
+@keyframes division2{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 10px;
+    }
 }
 
 .title{
