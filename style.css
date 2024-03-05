@@ -96,6 +96,7 @@ html{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
     animation-name: division1;
     animation-duration: 1s;
+    font-size: 5px;
 }
 
 @keyframes division1 {
@@ -117,6 +118,7 @@ html{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
     animation-name: division2;
     animation-duration: 1.5s;
+    font-size: 5px;
 }
 
 @keyframes division2{
@@ -129,17 +131,46 @@ html{
 }
 
 .title{
+    text-align: center;
+    margin: 0px;
+    padding: 150px;
     font-size: 60px;
     font-weight: 800;
     font-family: Bookman, URW Bookman L, serif;
     color: #000000b2;
+    animation-name: title_fade;
+    animation-duration: 1.5s;
+    background: linear-gradient(rgb(219, 255, 255), #6ce0cd)
 }
 
-.imagem{
-    text-align: center;
-    margin: 0px 0;
-    background-color: #d3ffed;
+@keyframes title_fade{
+    from{
+        color: #00000000;
+        padding: 0px;
+    }
+    to{
+        color:#000000b2;
+        padding-top: 150px;
+    }
 }
+
+.introduction{
+    font-size: large;
+    background-color: #6ce0cd;
+    margin: -20px;
+    padding: 10px;
+    text-align: center;
+    color:#000000
+}
+
+
+
+
+
+
+
+
+
 
 body{
     min-height: 100%;
