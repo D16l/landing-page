@@ -1,10 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
 html{
     height: 100%;
 }
 
 .navBar{
     background-color: aquamarine;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 6, 0.267) 0 2px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
     height: 75px;
     animation-name: navBar;
     animation-duration: 0.5s;
@@ -18,6 +21,12 @@ html{
         height: 75px;
     }
 }
+
+img{
+    max-width: 200px;
+    height: auto;
+}
+
 .brand-logo{
     display: inline-block;
     height: 30px;
@@ -90,7 +99,7 @@ html{
 }
 
 .division-one{
-    background-color: rgba(106, 214, 178, 0.705);
+    background-color: rgb(106, 214, 178);
     color: rgba(106, 214, 178, 0);
     height: 20px;
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
@@ -112,10 +121,10 @@ html{
 }
 
 .division-two{
-    background-color: rgba(74, 151, 127, 0.514);
-    color: rgba(106, 214, 178, 0);
+    background-color: rgb(79, 160, 133);
+    color: rgba(135, 255, 215, 0);
     height: 10px;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e700 0 -3px 0 inset;
     animation-name: division2;
     animation-duration: 1.5s;
     font-size: 5px;
@@ -131,91 +140,161 @@ html{
 }
 
 .title{
+    background: #93f5f0;  
+    background: -webkit-linear-gradient(to left, #8ffbed, #4ec8c2);  
     text-align: center;
+    text-shadow: 3px 1px 19px rgba(0, 0, 0, 0.5);
+    font-family: 'Exo', sans-serif;
     margin: 0px;
     padding: 150px;
     font-size: 60px;
     font-weight: 800;
-    font-family: Bookman, URW Bookman L, serif;
-    color: #000000b2;
+    color: #ffffff;
     animation-name: title_fade;
     animation-duration: 1.5s;
-    background: linear-gradient(rgb(219, 255, 255), #6ce0cd)
+    background-position: center;
+   
 }
 
-@keyframes title_fade{
-    from{
-        color: #00000000;
-        padding: 0px;
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: 840px;
+    top: auto;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
     }
-    to{
-        color:#000000b2;
-        padding-top: 150px;
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
+
 }
 
 .introduction{
     font-size: large;
     background-color: #6ce0cd;
     margin: -20px;
-    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
     text-align: center;
-    color:#000000
+    color:#000000;
+    flex: content;
+    justify-content: center;
+    animation-name: introduction_fade;
+    animation-duration: 3.3s;
 }
 
-
-
-
-
-
-
-
+@keyframes introduction_fade{
+    from{
+        color: #00000000;
+    }
+    to{
+        color:#000000;
+    }
+}
 
 
 body{
-    min-height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(219, 255, 255);
-}
-
-img{
-    max-width: 200px;
-    height: auto;
-}
-
-.descricao{
-    padding: 20px;
-}
-
-h3{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.formulario{
-    background-color: rgb(127, 240, 255);
-    padding: 20px;
-    text-align: center;
-}
-
-input{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-footer{
-    background-color: rgb(74, 47, 173);
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
+    background-color: #93f5f0;
 }
