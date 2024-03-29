@@ -199,26 +199,84 @@ img{
 }
 
 .style-border-BT{
-    border: 3px solid #4e4e4e;
+    border: 2px solid #4e4e4e;
     width: auto;
-    padding: 1%;
+    padding: 10px 20px;
     border-radius: 5%;
     margin: 1%;
-    transition: all 0.5s;
+    transition: all 1s;
     user-select: none;
+    display: inline-block;
 }
 
 .style-border-BT:hover{
     background-color: aquamarine;
     font-weight: bold;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
-    transition: background-color 0.5s;
+    transition: background-color 1s;
     transform: scale(1.1);
     cursor: pointer;
-    border-color: #ffffff;
 }
 
 .style-border-BT:active{
-    box-shadow: #009c60 0 3px 7px inset;
     transform: translateY(2px);
+    border-color: #4e4e4e;
+}
+
+.menu-botoes {
+    display: none;
+    position: relative;
+
+}
+
+.menu-botoes.visible {
+    display: block;
+    height: 120px;
+    background-color: aquamarine;
+    margin: 0% 20% 1% 20%;
+    padding-right: 3%;
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center;
+    align-items: center;
+    border-radius: 10px;
+    animation-name: animacaoMenu;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes animacaoMenu{
+    0% {
+        color: #00000000;
+        height: 0;
+        transform: translateY(-20px);
+    }
+    50%{
+        color: #00000000;
+    }
+    100%{
+        height: 120px;
+        transform: translateY(0);
+        color: #000000;
+    }
+}
+
+.fechar-menu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.conteudo-menu{
+    position: relative;
+    margin-right: -5%;
+    margin-top: -3%;
+    
+}
+
+.fechar-menu::before{
+    content: "\2715";
+    font-size: 20px;
 }
