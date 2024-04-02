@@ -239,6 +239,7 @@ img{
 .menu-botoes {
     display: none;
     position: relative;
+    font-family: 'Exo', sans-serif;
 
 }
 
@@ -315,8 +316,12 @@ img{
     background-color: #cefff0;
     padding-right: 1%;
     padding-bottom: 1%;
+    transition: transform 0.3s ease;
 }
 
+.secont-section:hover{
+    transform: scale(1.1);
+}
 
 .history-content{
     flex: 1;
@@ -324,7 +329,42 @@ img{
 
 .secont-bar{
     background-color: #000000;
-    margin: 0.5% 40% 2% 40%;
+    margin: 1% 40% 1% 40%;
+    height: 2px;
+    color: #00000000;
+}
+
+.support-text{
+    text-align: justify;
+    font-family: 'Exo', sans-serif;
+}
+
+#bold-support-text{
+    font-weight: 650;
+    text-align: start;
+}
+
+.third-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0% 20% 0% 20%;
+    background-color: #ecfff9;
+    padding-left: 1%;
+    transition: transform 0.3s ease;
+}
+
+.third-section:hover{
+    transform: scale(1.1);
+}
+
+.support-content{
+    flex: 1;
+}
+
+.third-bar{
+    background-color: #000000;
+    margin: 0.5% 20% 1% 20%;
     height: 2px;
     color: #00000000;
 }
