@@ -201,12 +201,25 @@ img{
 .style-border-BT{
     border: 2px solid #4e4e4e;
     width: auto;
-    padding: 10px 20px;
+    padding: 0.5% 1%;
     border-radius: 5%;
     margin: 1%;
     transition: all 1s;
     user-select: none;
     display: inline-block;
+    animation-name: button-entry;
+    animation-duration: 1s;
+}
+
+@keyframes button-entry {
+    from{
+        padding: 0% 0%;
+        font-size: smaller;
+    }
+    to{
+        padding: 0.5% 1%;
+        font-size: medium;
+    }
 }
 
 .style-border-BT:hover{
@@ -231,15 +244,16 @@ img{
 
 .menu-botoes.visible {
     display: block;
-    height: 120px;
+    height: auto;
+    overflow: hidden;
     background-color: aquamarine;
     margin: 0% 20% 1% 20%;
     padding-right: 3%;
     padding-top: 1%;
     display: flex;
     flex-wrap: wrap;
-    text-align:center;
-    align-items: center;
+    text-align: center;
+    justify-content: center;
     border-radius: 10px;
     animation-name: animacaoMenu;
     animation-duration: 1.5s;
@@ -247,18 +261,15 @@ img{
 }
 
 @keyframes animacaoMenu{
-    0% {
-        color: #00000000;
+    from{
+        opacity: 0;
         height: 0;
         transform: translateY(-20px);
     }
-    50%{
-        color: #00000000;
-    }
-    100%{
-        height: 120px;
+    to{
+        opacity: 1;
+        height: auto;
         transform: translateY(0);
-        color: #000000;
     }
 }
 
@@ -269,14 +280,51 @@ img{
     cursor: pointer;
 }
 
-.conteudo-menu{
-    position: relative;
-    margin-right: -5%;
-    margin-top: -3%;
-    
-}
 
 .fechar-menu::before{
     content: "\2715";
     font-size: 20px;
+    font-weight: 700;
+}
+
+.first-bar{
+    background-color: #000000;
+    margin: 0% 30% 0.5% 30%;
+    height: 2px;
+    color: #00000000;
+
+}
+
+.history-text{
+    text-align: justify;
+    margin: 0% 0% 1% 20%;
+    font-family: 'Exo', sans-serif;
+}
+
+#bold-history-text{
+    font-weight: 650;
+    text-align: end;
+}
+
+
+.secont-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0% 20% 0% 20%;
+    background-color: #cefff0;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+
+.history-content{
+    flex: 1;
+}
+
+.secont-bar{
+    background-color: #000000;
+    margin: 0.5% 40% 2% 40%;
+    height: 2px;
+    color: #00000000;
 }
