@@ -45,6 +45,7 @@ img{
     height: 35px;
     margin-left: 0.01%;
     transform: scale(1);
+    cursor: pointer;
 }
 
 .login-right{
@@ -360,12 +361,13 @@ img{
     flex: 1;
 }
 
-
 .title-section{
-    width: 45%;
+    width: 75%;
     padding: 0.5%;
     margin-bottom: 0.5%;
-    background-color: #f9f9f9;
+    padding-left: 2%;
+    padding-top: 1%;
+    background-color: #d2fdff;
     border-radius: 2%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: 'Exo', sans-serif;
@@ -379,9 +381,11 @@ img{
 }
 
 .forms {
-    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
     padding: 2%;
-    background-color: #f9f9f9;
+    background-color: #d2fdff;
     border-radius: 2%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -391,17 +395,30 @@ img{
 .forms input[type="checkbox"],
 .forms input[type="radio"] {
     margin-bottom: 2%;
+    margin-right: 1%;
 }
 
 .forms input[type="checkbox"],
 .forms input[type="radio"] {
     margin-right: 2%;
-    flex-wrap: wrap-reverse;
 
 }
 
 .forms input[type="text"]{
-    width: 60%;
+    width: 90%;
     box-sizing: border-box;
-    padding: 0%;
+    padding: 0.5%;
+}
+
+.form-part1,
+.form-part2,
+.form-part3{
+    display: inline-block;
+    vertical-align: top;
+    flex: 1;
+}
+
+.button-send{
+    height: 246px;
+    flex: 1;
 }

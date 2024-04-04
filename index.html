@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navBar">
+    <div id="navbar" class="navBar">
         <div class="brand-logo">
-            <img src="img/Sem título-1.png" alt="imagem logo vcash">
+            <a href="index.html">
+                <img src="img/Sem título-1.png" alt="imagem logo vcash">
+            </a>
         </div>
         <div class="login-right">
             <button type="button" onclick="" class="login-btn">Login</button>
@@ -117,32 +119,51 @@ Nosso compromisso é garantir uma experiência tranquila, livre de estresse e to
             style="width:200px;height:200px">
         </lord-icon>
     </div>
-    <div class="forms-background">
-        <div class="title-section">
-            <h2 >Quer fazer parte?</h2>
-            <p>Se inscreva agora, mandando um e-mail para nossa equipe de vendas e logo entraremos em contato!</p>
+    <div class="gallery-forms">
+        <div class="forms-background">
+            <div class="title-section">
+                <h2 >Quer fazer parte?</h2>
+                <p>Se inscreva agora, mandando um e-mail para nossa equipe de vendas e logo entraremos em contato!</p>
+            </div>
+            <form class="forms">
+                <div class="form-part1">
+                    <label for="userName">Seu nome completo:</label><br>
+                    <input type="text" id="userName" name="userName"><br>
+                    <label for="userEmail">Seu e-mail:</label><br>
+                    <input type="text" id="userEmail" name="userEmail"><br>
+                    <label for="userPhone">Seu telefone para contato:</label><br>
+                    <input type="tel" id="userPhone" name="userPhone" pattern="([0-9]{2}) [0-9]{4}-[0-9]{4}" placeholder="(xx) xxxx-xxxx" maxlength="16"><br>
+                </div>
+                <div class="form-part2">
+                    <label>Horário de disponibilidade:</label><br>
+                    <input type="checkbox" id="day" name="daytime">
+                    <label for="day">Matutino</label><br>
+                    <input type="checkbox" id="afternoon" name="afternoon">
+                    <label for="afternoon">Vespertino</label><br>
+                    <input type="checkbox" id="night" name="afternoon">
+                    <label for="night">Noturno</label><br>
+                </div>
+                <div class="form-part3">
+                    <label>Já possui possui alguma carteira digital?</label><br>
+                    <input type="radio" id="yes" name="options" value="Sim">
+                    <label for="yes">Sim</label><br>
+                    <input type="radio" id="no" name="options" value="Não">
+                    <label for="no">Não</label><br>
+                </div>
+                <div class="button-send">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/nqisoomz.json"
+                        trigger="boomerang"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                </div>
+            </form>
         </div>
-        <form class="forms">
-            <label for="userName">Seu nome completo:</label><br>
-            <input type="text" id="userName" name="userName"><br>
-            <label for="userEmail">Seu e-mail:</label><br>
-            <input type="text" id="userEmail" name="userEmail"><br>
-            <label for="userPhone">Seu telefone para contato:</label><br>
-            <input type="tel" id="userPhone" name="userPhone" pattern="([0-9]{2}) [0-9]{4}-[0-9]{4}" placeholder="(xx) xxxx-xxxx" maxlength="16"><br>
-            <label>Horário de disponibilidade:</label><br>
-            <input type="checkbox" id="day" name="daytime">
-            <label for="day">Matutino</label><br>
-            <input type="checkbox" id="afternoon" name="afternoon">
-            <label for="afternoon">Vespertino</label><br>
-            <input type="checkbox" id="night" name="afternoon">
-            <label for="night">Noturno</label><br>
-            <label>Já possui possui alguma carteira digital?</label><br>
-            <input type="radio" id="yes" name="options" value="Sim">
-            <label for="yes">Sim</label><br>
-            <input type="radio" id="no" name="options" value="Não">
-            <label for="no">Não</label><br>
-        </form>
     </div>
+    <footer>
+        <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+    </footer>
     <script src="script.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
